@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form e Input fields</title>
+  </head>
+  <body>
+   <style>
+      div {
+         padding-bottom: 5px;
+      }
+   </style>
+    <h1>Interazioni con l'utente</h1>
+    <form onsubmit="alert('Registrazione Inviata!')">
+      <h5>Dati Personali</h5>
+      <div>
+        <input type="text" placeholder="Nome" />
+        <input type="text" placeholder="Cognome" />
+      </div>
+      <div>
+        <input type="email" placeholder="Email" />
+        <input type="number" placeholder="Telefono" />
+      </div>
+      <div>
+         <label>Data di Nascita: </label>
+        <input type="date" />
+      </div>
+      <div>
+        <input type="password" placeholder="Password" />
+        <input type="password" placeholder="Conferma Pass" />
+      </div>
+      <div style="padding-top: 25px; padding-bottom: 50px">
+        <h5>Genere Musicale Preferito:</h5>
+        <div>
+          <input type="radio" name="musica" value="rock" />
+          <label>Rock</label>
+        </div>
+        <div>
+          <input type="radio" name="musica" value="rock" />
+          <label>Pop</label>
+        </div>
+        <div>
+          <input type="radio" name="musica" value="rock" />
+          <label>Disco</label>
+        </div>
+      </div>
+      <div style="padding-bottom: 5px">
+        <input type="checkbox" />
+        <label><b>Accetto i termini e le condizioni</b></label>
+      </div>
+      <button type="submit" style="padding: 20px">
+        Invia Registrazione
+      </button>
+    </form>
+  </body>
+</html>
